@@ -44,6 +44,10 @@ def start_over():
     tweets_box.place_forget()
     newSearchBtn.place_forget()
 
+    #clears the values from original search 
+    usernameBox.delete(0,'end')
+    startDateBox.delete(0,'end')
+    endDateBox.delete(0,'end')
 
 root = Tk()
 root.title("Twitter Date Checker - GUI")
